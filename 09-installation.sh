@@ -9,3 +9,10 @@ then
   else
     echo "Please run the script with root user access" 
 fi
+
+if [ $? -eq 0 ]
+then
+  echo "nginx installation is success"
+else 
+  echo "nginx installation is failure"
+fi  
