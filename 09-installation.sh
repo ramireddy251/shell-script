@@ -10,9 +10,9 @@ then
   echo "installing nginx"
   apt install nginx -y
   
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
-  echo "nginx installation is success"
-else 
   echo "nginx installation is failure"
+else 
+  echo "nginx installation is success"
 fi  
