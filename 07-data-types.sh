@@ -6,3 +6,11 @@ NUM2=200
 SUM=$(($NUM1+$NUM2))
 
 echo "sum is $SUM"
+
+#Array
+FRUITS=("Apple" "Banana" "Mango")
+
+echo "Fruits are: ${FRUITS[@]}"
+echo "First fruit is: ${FRUITS[0]}"
+echo "First fruit is: ${FRUITS[1]}"
+echo "First fruit is: ${FRUITS[2]}"
