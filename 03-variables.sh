@@ -1,7 +1,7 @@
 #!/bin/bash
 read -p "Enter first Person name: " p1
 read -p "Enter second person name: " p2
-___________________________________________
+echo "___________________________________________"
 
 echo "$p1:: Hi $p2 How Are you?"
 echo "$p2:: Hi $p1 I am fine thanks for asking. How are you?"
