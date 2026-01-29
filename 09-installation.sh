@@ -8,7 +8,7 @@ then
   exit 1
   fi
   echo "installing nginx"
-  apt install nginx -y
+  apt install nginxxx -y
   
   if [ $? -ne 0 ]
   then
@@ -19,7 +19,7 @@ else
 fi
 
 echo "Installing mysql"
-apt install mysql-server -y
+apt install mysql-serverss -y
 
 if [ $? -ne 0 ]
 then
@@ -30,7 +30,7 @@ else
 fi  
 
 echo "Installing Nodejs"
-apt install nodejs -y 
+apt install nodejsss -y 
 
 if [ $? -ne 0 ]
 then
