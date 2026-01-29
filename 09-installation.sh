@@ -9,4 +9,34 @@ then
   fi
   echo "installing nginx"
   apt install nginx -y
-  echo "nginx installation is success"
+  
+  if [ $? -ne 0 ]
+  then
+    echo "Installing Nginx ..... Failure"
+    exit 1
+else
+   echo "Installing Nginx ..... Success"
+fi
+
+echo "Installing mysql"
+apt install mysql-server -y
+
+if [ $? -ne 0 ]
+then
+  echo "Installing MySQL ..... Failure"
+  exit 1
+else
+  echo "Installing MySQL ..... Success"
+fi  
+
+echo "Installing Nodejs"
+apt install nodejs -y 
+
+if [ $? -ne 0 ]
+then
+  echo "Installing Nodejs ..... Failure"
+  exit 1
+else
+  echo "Installing Nodejs ...... Success"
+fi  
+
