@@ -23,7 +23,7 @@ then
 fi   
 
   }
-  apt install nginxx -y &>> $LOGS_FILE
+  apt install nginx -y &>> $LOGS_FILE
   VALIDATE $? "Installing Nginx"
 
 
