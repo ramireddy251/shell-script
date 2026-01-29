@@ -24,9 +24,17 @@ then
 fi   
 
   }
+
+  IS_INSTALLED() {
+    dpkg -s "$package" &> /dev/null
+    return $?
+}
   
   for package in ${PACKAGES[@]}
   do
+    if IS_INSTALLED "$package"; then
+        echo "$package is already installed, skipping..."
+    else
     echo "installing $package"
     apt install $package -y &>>$LOGS_FILE
     VALIDATE $? "$package installation"
