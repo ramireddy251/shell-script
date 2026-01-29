@@ -28,7 +28,7 @@ fi
   for package in ${PACKAGES[@]}
   do
     echo "installing $package"
-    apt install $package -y
+    apt install $package -y &>>$LOGS_FILE
     VALIDATE $? "$package installation"
   done  
 
