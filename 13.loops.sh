@@ -38,5 +38,6 @@ fi
     echo "installing $package"
     apt install $package -y &>>$LOGS_FILE
     VALIDATE $? "$package installation"
+    fi
   done  
 
