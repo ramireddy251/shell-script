@@ -19,7 +19,7 @@ then
 fi   
 
   }
-  apt install nginxx -y
+  apt install nginx -y
   VALIDATE $? "Installing Nginx"
 
 
