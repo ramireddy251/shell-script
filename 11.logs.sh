@@ -10,7 +10,7 @@ then
   exit 1
   fi
 
-  mkdir $LOGS_FOLDER
+  mkdir -p $LOGS_FOLDER
 
   VALIDATE () {
      
