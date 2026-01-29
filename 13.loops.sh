@@ -1,6 +1,6 @@
 #!/bin/bash
 
-package=("nginx" "mysql-server" "nodejs")
+PACKAGES=("nginx" "mysql-server" "nodejs")
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
@@ -25,9 +25,10 @@ fi
 
   }
   
-  for package in $@
+  for package in ${PACKAGES[@]}
   do
+    echo "installing $package"
     apt install $package -y
-    VALIFATE $? "$package installation"
+    VALIDATE $? "$package installation"
   done  
 
