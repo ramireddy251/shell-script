@@ -6,4 +6,4 @@ Y="\e[33m"
 B="\e[34m"
 N="\e[0m"
 
-echo -e "$G Hellow World $N, $B I am learning Shell Script $N"
+echo -e "$Y Hellow World $N, $R I am learning Shell Script $N"
