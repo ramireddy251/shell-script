@@ -4,7 +4,7 @@ set -e # This will be checking for errors, if errors it will exists
 
 #!/bin/bash
 
-PACKAGES=("nginx" "mysql-server" "nodejs")
+PACKAGES=("nginxx" "mysql-server" "nodejs")
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
