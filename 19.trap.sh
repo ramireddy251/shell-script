@@ -3,7 +3,7 @@
 set -e
 trap 'echo "There is an error in $LINENO, Command: $BASH_COMMAND"' ERR
 
-PACKAGES=("nginx" "mysql-serverr" "nodejs")
+PACKAGES=("nginx" "mysql-server" "nodejs")
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
